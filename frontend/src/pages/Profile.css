@@ -1,7 +1,7 @@
 .profile-page {
   padding: 60px 0;
   min-height: 70vh;
-  background: linear-gradient(135deg, #F3F3F4 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, #F3F3F4 0%, #D9C5B2 20%, #F3F3F4 100%);
 }
 
 .profile-card {
