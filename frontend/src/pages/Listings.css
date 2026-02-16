@@ -1,0 +1,125 @@
+.listings-page {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #F3F3F4 0%, #e9ecef 100%);
+  min-height: 80vh;
+}
+
+.filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(20, 17, 15, 0.08);
+}
+
+.filters select,
+.filters input {
+  padding: 14px 18px;
+  border: 2px solid #e9ecef;
+  border-radius: 50px;
+  flex: 1;
+  min-width: 180px;
+  font-size: 0.95rem;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.filters select:focus,
+.filters input:focus {
+  outline: none;
+  border-color: #D9C5B2;
+  box-shadow: 0 0 0 3px rgba(217, 197, 178, 0.2);
+}
+
+.listings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 35px;
+}
+
+.listing-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.listing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(20, 17, 15, 0.12);
+}
+
+.listing-image {
+  height: 220px;
+  background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.listing-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0,0,0,0.3), transparent);
+}
+
+.listing-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.listing-card:hover .listing-image img {
+  transform: scale(1.1);
+}
+
+.no-image {
+  font-size: 4rem;
+  opacity: 0.3;
+}
+
+.listing-card h3 {
+  padding: 20px 24px 8px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.listing-card .price {
+  padding: 0 24px;
+  background: linear-gradient(135deg, #14110F 0%, #D9C5B2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
+.listing-card .location {
+  padding: 8px 24px;
+  color: #718096;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.listing-card .category {
+  padding: 0 24px 20px;
+  color: #a0aec0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

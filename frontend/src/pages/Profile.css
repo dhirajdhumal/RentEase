@@ -1,0 +1,70 @@
+.profile-page {
+  padding: 60px 0;
+  min-height: 70vh;
+  background: linear-gradient(135deg, #F3F3F4 0%, #e9ecef 100%);
+}
+
+.profile-card {
+  background: white;
+  padding: 50px;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(20, 17, 15, 0.1);
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.profile-card h1 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #14110F 0%, #D9C5B2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+.profile-info {
+  margin-bottom: 30px;
+}
+
+.profile-info p {
+  padding: 16px 20px;
+  border-bottom: 2px solid #f0f0f0;
+  font-size: 1.05rem;
+  color: #7E7F83;
+  font-weight: 500;
+}
+
+.profile-info p strong {
+  color: #34312D;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.profile-card form input {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  transition: all 0.3s;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.profile-card form input:focus {
+  outline: none;
+  border-color: #D9C5B2;
+  box-shadow: 0 0 0 3px rgba(217, 197, 178, 0.2);
+}
+
+.profile-card .button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.profile-card .button-group button {
+  flex: 1;
+}

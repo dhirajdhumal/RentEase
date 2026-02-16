@@ -1,0 +1,136 @@
+.payment-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.payment-modal {
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  max-width: 480px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(20, 17, 15, 0.2);
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.payment-modal h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #14110F 0%, #D9C5B2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.payment-amount {
+  background: linear-gradient(135deg, #14110F 0%, #34312D 100%);
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(20, 17, 15, 0.3);
+}
+
+.payment-amount p {
+  color: rgba(243, 243, 244, 0.9);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.payment-amount h3 {
+  font-size: 2.5rem;
+  color: #D9C5B2;
+  font-weight: 800;
+}
+
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.payment-methods label {
+  display: flex;
+  align-items: center;
+  padding: 18px 20px;
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.payment-methods label:hover {
+  border-color: #D9C5B2;
+  background: rgba(217, 197, 178, 0.1);
+  transform: translateX(5px);
+}
+
+.payment-methods label.selected {
+  border-color: #D9C5B2;
+  background: linear-gradient(135deg, rgba(20, 17, 15, 0.05) 0%, rgba(217, 197, 178, 0.1) 100%);
+  box-shadow: 0 5px 20px rgba(217, 197, 178, 0.2);
+}
+
+.payment-methods input[type="radio"] {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+  accent-color: #14110F;
+}
+
+.payment-methods span {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #34312D;
+}
+
+.payment-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.payment-actions button {
+  flex: 1;
+}
+
+.payment-note {
+  text-align: center;
+  margin-top: 20px;
+  color: #7E7F83;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
