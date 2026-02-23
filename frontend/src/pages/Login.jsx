@@ -15,7 +15,15 @@ function Login() {
     try {
       const { data } = await api.post('/auth/login', formData);
       setAuth(data, data.token);
-      navigate(data.role === 'admin' ? '/admin' : '/dashboard');
+      
+      // Redirect based on user role
+      if (data.role === 'admin') {
+        navigate('/admin');
+      } else if (data.role === 'owner') {
+        navigate('/dashboard');
+      } else {
+        navigate('/listings');
+      }
     } catch (err) {
       setError(err.response?.data?.message || 'Login failed');
     }

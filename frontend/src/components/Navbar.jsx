@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="container">
-        <Link to="/" className="logo">Madhumanjiri</Link>
+        <Link to="/" className="logo">RentEase</Link>
         <div className="nav-links">
           <Link to="/listings">Browse</Link>
           {user ? (
