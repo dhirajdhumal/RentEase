@@ -33,23 +33,6 @@ cp .env.example .env
 npm run dev
 ```
 
-### Seed Sample Data
-
-```bash
-cd backend
-npm run seed
-```
-
-This will create:
-- 2 Owner accounts
-- 1 Customer account
-- 12 Sample listings (4 houses + 8 vehicles)
-
-Sample Login Credentials:
-- Owner 1: `rajesh@example.com` / `password123`
-- Owner 2: `priya@example.com` / `password123`
-- Customer: `amit@example.com` / `password123`
-
 ### Frontend
 
 ```bash
